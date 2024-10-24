@@ -1,0 +1,172 @@
+
+mysql> CREATE DATABASE RUHANDE;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> CREATE TABLE NGOMA(ID_NO INT,F_NAME CHAR(15),L_NAME CHAR(15),GENDER CHAR(6),PROVINCE CHAR(10),DISTRICT CHAR(15),SECTOR CHAR(7),SELL CHAR(10),VILLAGE CHAR(10),TELEPHONE VARCHAR(10), EMAIL VARCHAR(25));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> INSERT INTO NGOMA VALUES('11992719634862','EMILE','NGOGA','M','EAST','HUYE','TUMBA','JURU','CYARWA','0788246350','emile@gmail.com');
+Query OK, 1 row affected, 1 warning (0.02 sec)
+
+mysql> INSERT INTO NGOMA VALUES('11','JAMES','RWAGASANA','M','EAST','RWAMAGANA','GATARE','SAKE','KABUKUBA','0788233350','james@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('12','ANGE','WAYISENGA','F','KIGALI','GASABO','JURU','KABUKUBA','RUSHUBI','0788233323','emmanuel@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('13','FABIOLA','RUGAMBA','F','KAMONYI','BISHENYI','RUYENZI','RUYENZI','IBERESHI','0790133323','fabiola@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('14','ELYSE','RWAGASENDA','M','SOUTH','MUHANGA','MUSHISHIRO','KABADAHA','ISANGO','07234233323','elyse@gmail.com');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> select *from ngoma;
++------------+---------+------------+--------+----------+-----------+---------+----------+----------+------------+--------------------+
+| ID_NO      | F_NAME  | L_NAME     | GENDER | PROVINCE | DISTRICT  | SECTOR  | SELL     | VILLAGE  | TELEPHONE  | EMAIL              |
++------------+---------+------------+--------+----------+-----------+---------+----------+----------+------------+--------------------+
+| 2147483647 | EMILE   | NGOGA      | M      | EAST     | HUYE      | TUMBA   | JURU     | CYARWA   | 0788246350 | emile@gmail.com    |
+|         11 | JAMES   | RWAGASANA  | M      | EAST     | RWAMAGANA | GATARE  | SAKE     | KABUKUBA | 0788233350 | james@gmail.com    |
+|         12 | ANGE    | WAYISENGA  | F      | KIGALI   | GASABO    | JURU    | KABUKUBA | RUSHUBI  | 0788233323 | emmanuel@gmail.com |
+|         13 | FABIOLA | RUGAMBA    | F      | KAMONYI  | BISHENYI  | RUYENZI | RUYENZI  | IBERESHI | 0790133323 | fabiola@gmail.com  |
+|         14 | ELYSE   | RWAGASENDA | M      | SOUTH    | MUHANGA   | MUSHISH | KABADAHA | ISANGO   | 0723423332 | elyse@gmail.com    |
++------------+---------+------------+--------+----------+-----------+---------+----------+----------+------------+--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use ruhande;
+Database changed
+mysql>  CREATE TABLE NGOMA(ID_NO INT,F_NAME CHAR(15),L_NAME CHAR(15),GENDER CHAR(6),PROVINCE CHAR(10),DISTRICT CHAR(15),SECTOR CHAR(7),SELL CHAR(10),VILLAGE CHAR(10),TELEPHONE VARCHAR(10), EMAIL VARCHAR(25));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> INSERT INTO NGOMA VALUES('11992719634862','EMILE','NGOGA','M','EAST','HUYE','TUMBA','JURU','CYARWA','0788246350','emile@gmail.com');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('11','JAMES','RWAGASANA','M','EAST','RWAMAGANA','GATARE','SAKE','KABUKUBA','0788233350','james@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('12','ANGE','WAYISENGA','F','KIGALI','GASABO','JURU','KABUKUBA','RUSHUBI','0788233323','emmanuel@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('13','FABIOLA','RUGAMBA','F','KAMONYI','BISHENYI','RUYENZI','RUYENZI','IBERESHI','0790133323','fabiola@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('14','ELYSE','RWAGASENDA','M','SOUTH','MUHANGA','MUSHISHIRO','KABADAHA','ISANGO','07234233323','elyse@gmail.com');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('15','NADIA','INGABIRE','F','EAST','BUGESERA','NYAMATA','NYAMATA','GATARE','0784453323','nadia@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('16','REGINE','USANASE','F','WEST','NGORORERO','BWIRA','TUMBA','GASURA','073453323','regine@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('17','ATHANASE','SIBOMANA','M','EAST','KIREHE','NASHO','RUSUMO','tabagwe','0734534253','vedaste@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO NGOMA VALUES('18','ERIC','ISHIMWE','M','WEST','RUSIZI','BYERAMVURA','NYANZA','MUHORORO','0734535355','cobla@gmail.com');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('19','ANGERA','ISHIMWE','F','KIGALI','NYARUGENGE','NYABUGOGO','NYANZA','RANGO','073453232','angella@gmail.com');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++------------+----------+------------+--------+----------+------------+---------+----------+----------+------------+--------------------+
+| ID_NO      | F_NAME   | L_NAME     | GENDER | PROVINCE | DISTRICT   | SECTOR  | SELL     | VILLAGE  | TELEPHONE  | EMAIL              |
++------------+----------+------------+--------+----------+------------+---------+----------+----------+------------+--------------------+
+| 2147483647 | EMILE    | NGOGA      | M      | EAST     | HUYE       | TUMBA   | JURU     | CYARWA   | 0788246350 | emile@gmail.com    |
+|         11 | JAMES    | RWAGASANA  | M      | EAST     | RWAMAGANA  | GATARE  | SAKE     | KABUKUBA | 0788233350 | james@gmail.com    |
+|         12 | ANGE     | WAYISENGA  | F      | KIGALI   | GASABO     | JURU    | KABUKUBA | RUSHUBI  | 0788233323 | emmanuel@gmail.com |
+|         13 | FABIOLA  | RUGAMBA    | F      | KAMONYI  | BISHENYI   | RUYENZI | RUYENZI  | IBERESHI | 0790133323 | fabiola@gmail.com  |
+|         14 | ELYSE    | RWAGASENDA | M      | SOUTH    | MUHANGA    | MUSHISH | KABADAHA | ISANGO   | 0723423332 | elyse@gmail.com    |
+|         15 | NADIA    | INGABIRE   | F      | EAST     | BUGESERA   | NYAMATA | NYAMATA  | GATARE   | 0784453323 | nadia@gmail.com    |
+|         16 | REGINE   | USANASE    | F      | WEST     | NGORORERO  | BWIRA   | TUMBA    | GASURA   | 073453323  | regine@gmail.com   |
+|         17 | ATHANASE | SIBOMANA   | M      | EAST     | KIREHE     | NASHO   | RUSUMO   | tabagwe  | 0734534253 | vedaste@gmail.com  |
+|         18 | ERIC     | ISHIMWE    | M      | WEST     | RUSIZI     | BYERAMV | NYANZA   | MUHORORO | 0734535355 | cobla@gmail.com    |
+|         19 | ANGERA   | ISHIMWE    | F      | KIGALI   | NYARUGENGE | NYABUGO | NYANZA   | RANGO    | 073453232  | angella@gmail.com  |
++------------+----------+------------+--------+----------+------------+---------+----------+----------+------------+--------------------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA ADD ADDRESS VARCHAR(20);
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+----------+------------+--------+----------+------------+---------+----------+----------+------------+--------------------+---------+
+| ID_NO      | F_NAME   | L_NAME     | GENDER | PROVINCE | DISTRICT   | SECTOR  | SELL     | VILLAGE  | TELEPHONE  | EMAIL              | ADDRESS |
++------------+----------+------------+--------+----------+------------+---------+----------+----------+------------+--------------------+---------+
+| 2147483647 | EMILE    | NGOGA      | M      | EAST     | HUYE       | TUMBA   | JURU     | CYARWA   | 0788246350 | emile@gmail.com    | NULL    |
+|         11 | JAMES    | RWAGASANA  | M      | EAST     | RWAMAGANA  | GATARE  | SAKE     | KABUKUBA | 0788233350 | james@gmail.com    | NULL    |
+|         12 | ANGE     | WAYISENGA  | F      | KIGALI   | GASABO     | JURU    | KABUKUBA | RUSHUBI  | 0788233323 | emmanuel@gmail.com | NULL    |
+|         13 | FABIOLA  | RUGAMBA    | F      | KAMONYI  | BISHENYI   | RUYENZI | RUYENZI  | IBERESHI | 0790133323 | fabiola@gmail.com  | NULL    |
+|         14 | ELYSE    | RWAGASENDA | M      | SOUTH    | MUHANGA    | MUSHISH | KABADAHA | ISANGO   | 0723423332 | elyse@gmail.com    | NULL    |
+|         15 | NADIA    | INGABIRE   | F      | EAST     | BUGESERA   | NYAMATA | NYAMATA  | GATARE   | 0784453323 | nadia@gmail.com    | NULL    |
+|         16 | REGINE   | USANASE    | F      | WEST     | NGORORERO  | BWIRA   | TUMBA    | GASURA   | 073453323  | regine@gmail.com   | NULL    |
+|         17 | ATHANASE | SIBOMANA   | M      | EAST     | KIREHE     | NASHO   | RUSUMO   | tabagwe  | 0734534253 | vedaste@gmail.com  | NULL    |
+|         18 | ERIC     | ISHIMWE    | M      | WEST     | RUSIZI     | BYERAMV | NYANZA   | MUHORORO | 0734535355 | cobla@gmail.com    | NULL    |
+|         19 | ANGERA   | ISHIMWE    | F      | KIGALI   | NYARUGENGE | NYABUGO | NYANZA   | RANGO    | 073453232  | angella@gmail.com  | NULL    |
++------------+----------+------------+--------+----------+------------+---------+----------+----------+------------+--------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA DROP VILLAGE;
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT ID_NO,F_NAME,L_NAME,EMAIL FROM NGOMA;
++------------+----------+------------+--------------------+
+| ID_NO      | F_NAME   | L_NAME     | EMAIL              |
++------------+----------+------------+--------------------+
+| 2147483647 | EMILE    | NGOGA      | emile@gmail.com    |
+|         11 | JAMES    | RWAGASANA  | james@gmail.com    |
+|         12 | ANGE     | WAYISENGA  | emmanuel@gmail.com |
+|         13 | FABIOLA  | RUGAMBA    | fabiola@gmail.com  |
+|         14 | ELYSE    | RWAGASENDA | elyse@gmail.com    |
+|         15 | NADIA    | INGABIRE   | nadia@gmail.com    |
+|         16 | REGINE   | USANASE    | regine@gmail.com   |
+|         17 | ATHANASE | SIBOMANA   | vedaste@gmail.com  |
+|         18 | ERIC     | ISHIMWE    | cobla@gmail.com    |
+|         19 | ANGERA   | ISHIMWE    | angella@gmail.com  |
++------------+----------+------------+--------------------+
+10 rows in set (0.00 sec)
+mysql> use ruhande;
+Database changed
+mysql> select *from ngoma;
++------------+----------+------------+--------+----------+------------+---------+----------+------------+--------------------+---------+
+| ID_NO      | F_NAME   | L_NAME     | GENDER | PROVINCE | DISTRICT   | SECTOR  | SELL     | TELEPHONE  | EMAIL              | ADDRESS |
++------------+----------+------------+--------+----------+------------+---------+----------+------------+--------------------+---------+
+| 2147483647 | EMILE    | NGOGA      | M      | EAST     | HUYE       | TUMBA   | JURU     | 0788246350 | emile@gmail.com    | NULL    |
+|         11 | JAMES    | RWAGASANA  | M      | EAST     | RWAMAGANA  | GATARE  | SAKE     | 0788233350 | james@gmail.com    | NULL    |
+|         12 | ANGE     | WAYISENGA  | F      | KIGALI   | GASABO     | JURU    | KABUKUBA | 0788233323 | emmanuel@gmail.com | NULL    |
+|         13 | FABIOLA  | RUGAMBA    | F      | KAMONYI  | BISHENYI   | RUYENZI | RUYENZI  | 0790133323 | fabiola@gmail.com  | NULL    |
+|         14 | ELYSE    | RWAGASENDA | M      | SOUTH    | MUHANGA    | MUSHISH | KABADAHA | 0723423332 | elyse@gmail.com    | NULL    |
+|         15 | NADIA    | INGABIRE   | F      | EAST     | BUGESERA   | NYAMATA | NYAMATA  | 0784453323 | nadia@gmail.com    | NULL    |
+|         16 | REGINE   | USANASE    | F      | WEST     | NGORORERO  | BWIRA   | TUMBA    | 073453323  | regine@gmail.com   | NULL    |
+|         17 | ATHANASE | SIBOMANA   | M      | EAST     | KIREHE     | NASHO   | RUSUMO   | 0734534253 | vedaste@gmail.com  | NULL    |
+|         18 | ERIC     | ISHIMWE    | M      | WEST     | RUSIZI     | BYERAMV | NYANZA   | 0734535355 | cobla@gmail.com    | NULL    |
+|         19 | ANGERA   | ISHIMWE    | F      | KIGALI   | NYARUGENGE | NYABUGO | NYANZA   | 073453232  | angella@gmail.com  | NULL    |
++------------+----------+------------+--------+----------+------------+---------+----------+------------+--------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER NGOMA DROP ADDRESS;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NGOMA DROP ADDRESS' at line 1
+mysql> ALTER NGOMA DROP ADDRESS;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NGOMA DROP ADDRESS' at line 1
+mysql> ALTER TABLE NGOMA DROP ADDRESS;
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++------------+----------+------------+--------+----------+------------+---------+----------+------------+--------------------+
+| ID_NO      | F_NAME   | L_NAME     | GENDER | PROVINCE | DISTRICT   | SECTOR  | SELL     | TELEPHONE  | EMAIL              |
++------------+----------+------------+--------+----------+------------+---------+----------+------------+--------------------+
+| 2147483647 | EMILE    | NGOGA      | M      | EAST     | HUYE       | TUMBA   | JURU     | 0788246350 | emile@gmail.com    |
+|         11 | JAMES    | RWAGASANA  | M      | EAST     | RWAMAGANA  | GATARE  | SAKE     | 0788233350 | james@gmail.com    |
+|         12 | ANGE     | WAYISENGA  | F      | KIGALI   | GASABO     | JURU    | KABUKUBA | 0788233323 | emmanuel@gmail.com |
+|         13 | FABIOLA  | RUGAMBA    | F      | KAMONYI  | BISHENYI   | RUYENZI | RUYENZI  | 0790133323 | fabiola@gmail.com  |
+|         14 | ELYSE    | RWAGASENDA | M      | SOUTH    | MUHANGA    | MUSHISH | KABADAHA | 0723423332 | elyse@gmail.com    |
+|         15 | NADIA    | INGABIRE   | F      | EAST     | BUGESERA   | NYAMATA | NYAMATA  | 0784453323 | nadia@gmail.com    |
+|         16 | REGINE   | USANASE    | F      | WEST     | NGORORERO  | BWIRA   | TUMBA    | 073453323  | regine@gmail.com   |
+|         17 | ATHANASE | SIBOMANA   | M      | EAST     | KIREHE     | NASHO   | RUSUMO   | 0734534253 | vedaste@gmail.com  |
+|         18 | ERIC     | ISHIMWE    | M      | WEST     | RUSIZI     | BYERAMV | NYANZA   | 0734535355 | cobla@gmail.com    |
+|         19 | ANGERA   | ISHIMWE    | F      | KIGALI   | NYARUGENGE | NYABUGO | NYANZA   | 073453232  | angella@gmail.com  |
++------------+----------+------------+--------+----------+------------+---------+----------+------------+--------------------+
+10 rows in set (0.00 sec)
+
+mysql>
